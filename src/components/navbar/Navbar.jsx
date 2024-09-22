@@ -27,7 +27,7 @@ const Navbar = () => {
               <img src="./github.png" alt="" />
             </a>
             <a href="https://www.linkedin.com/in/sumit-raut-462642240/">
-              <img className="linkedin" src="./linkedin.png" alt="" />
+              <img className="linkedin.png" src="./linkedin.png" alt="" />
             </a>
           </div>
         

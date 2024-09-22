@@ -1,0 +1,45 @@
+@import "../../app.scss";
+
+.navbar{
+    height: 100px;
+
+
+
+    .wrapper{
+        
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;
+        height: 100%;
+
+        @include mobile{
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        
+
+
+        span{
+          font-weight: bold;  
+          margin-left: 259px; 
+          padding-right: 0px; 
+        }
+
+        .social{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 18px;
+                height: 18px;
+            }
+
+            .linkedin{
+                background-color: 
+                #85c1e9 ;
+            }
+        }
+    }
+}

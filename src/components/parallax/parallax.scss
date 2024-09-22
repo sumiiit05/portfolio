@@ -16,6 +16,10 @@
             font-size: 72px;
             text-align: center;
         }
+
+        @include tablet {
+            font-size: 88px; // Adjust font size for tablet
+        }
     }
 
     .mountains {
@@ -30,6 +34,10 @@
         @include mobile {
             background-size: contain;
             background-repeat: no-repeat;
+        }
+
+        @include tablet {
+            background-size: cover; // Maintain cover on tablet
         }
     }
 
@@ -46,6 +54,10 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
+        @include tablet {
+            background-size: cover; // Maintain cover on tablet
+        }
     }
     
     .stars {
@@ -60,6 +72,10 @@
         @include mobile {
             background-size: contain; // Ensure stars are responsive
             background-repeat: no-repeat; // Prevent tiling on mobile
+        }
+
+        @include tablet {
+            background-size: cover; // Maintain cover on tablet
         }
     }
 }

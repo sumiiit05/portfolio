@@ -17,16 +17,16 @@ const Navbar = () => {
 
         
           <div className="social">
-            <a href="#">
+            <a href="https://www.facebook.com/rsumithere">
               <img src="./facebook.png" alt="" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/sumiiit._/">
               <img src="./instagram.png" alt="" />
             </a>
             <a href="https://github.com/sumiiit05">
               <img src="./github.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/sumit-raut-462642240/">
               <img className="linkedin" src="./linkedin.png" alt="" />
             </a>
           </div>

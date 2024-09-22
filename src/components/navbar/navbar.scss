@@ -87,21 +87,7 @@
                 }
             }
 
-            .linkedin {
-                background-color: #85c1e9;
-
-                @include mobile {
-                    padding: 5px; // Adjust padding for mobile
-                }
-
-                @include tablet {
-                    padding: 7px; // Adjust padding for tablet
-                }
-
-                @include desktop {
-                    padding: 10px; // Adjust padding for desktop
-                }
-            }
+           
         }
     }
 }

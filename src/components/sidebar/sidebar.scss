@@ -19,7 +19,7 @@
         border-radius: 10px;
 
         @include mobile {
-            width: 100px; // Adjust sidebar width for mobile
+            width: 150px; // Adjust sidebar width for mobile
         }
 
         .links {

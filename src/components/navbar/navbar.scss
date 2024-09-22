@@ -1,44 +1,60 @@
 @import "../../app.scss";
 
-.navbar{
+.navbar {
     height: 100px;
 
-
-
-    .wrapper{
-        
+    .wrapper {
         max-width: 1366px;
         margin: auto;
         display: flex;
         align-items: center;
-        justify-content: space-between ;
+        justify-content: space-between;
         height: 100%;
 
-        @include mobile{
+        @include mobile {
             justify-content: flex-end;
             padding: 20px;
         }
-        
 
-
-        span{
-          font-weight: bold;  
-          margin-left: 259px; 
-          padding-right: 0px; 
+        @include tablet {
+            justify-content: space-between; // Adjust for tablet layout if needed
+            padding: 10px; // Modify padding for tablets
         }
 
-        .social{
+        @include desktop {
+            justify-content: space-between; // Adjust for desktop layout if needed
+            padding: 15px; // Modify padding for desktops
+        }
+
+        span {
+            font-weight: bold;  
+            margin-left: 259px; 
+
+            @include mobile {
+                margin-left: 10px; // Adjust margin for mobile
+            }
+
+            @include tablet {
+                margin-left: 20px; // Adjust margin for tablet
+            }
+        }
+
+        .social {
             display: flex;
             gap: 20px;
 
-            img{
+            img {
                 width: 18px;
                 height: 18px;
+
+                @include mobile {
+                    width: 16px; // Adjust icon size for mobile
+                    height: 16px; // Adjust icon size for mobile
+                }
             }
 
-            .linkedin{
-                background-color: 
-                #85c1e9 ;
+            .linkedin {
+                background-color: #85c1e9;
             }
         }
     }

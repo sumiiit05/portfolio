@@ -1,6 +1,6 @@
 @import "../../app.scss";
 
-.contact{
+.contact {
     height: 100%;
     max-width: 1366px;
     margin: auto;
@@ -8,91 +8,83 @@
     align-items: center;
     gap: 50px;
 
-    @include mobile{
-       width: 100%;
-       padding: 10px;
-       flex-direction: column;
-       }
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
 
-
-    .textContainer{
+    .textContainer {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap:40px ;
+        gap: 40px;
 
-        @include mobile{
+        @include mobile {
             gap: 20px;
             text-align: center;
             align-items: center;
             margin-top: 70px;
-           }
+        }
     }
 
-    h1{
+    h1 {
         font-size: 100px;
         line-height: 88px;
 
-        @include mobile{
+        @include mobile {
             font-size: 36px;
         }
     }
 
-    span{
-        font-weight:300 ;
+    span {
+        font-weight: 300;
     }
 
-    .formContainer{
+    .formContainer {
         flex: 1;
         position: relative;
-         
 
-         @include mobile{
+        @include mobile {
             width: 100%;
             padding: 50px;
-       }
-
-        .phoneSvg{
-           stroke: inherit;
-           position: absolute;
-           margin: auto;
-           z-index: -1;
         }
 
-        form
-        { 
+        .phoneSvg {
+            stroke: inherit;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+        }
+
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
-    
-            
-            input,textarea
-            {
+
+            input, textarea {
                 padding: 20px;
                 background-color: transparent;
                 border: 1px solid white;
                 color: white;
                 border-radius: 5px;
 
-
-                @include mobile{
+                @include mobile {
                     padding: 10px;
-               }
+                }
             }
 
-            button{
+            button {
                 padding: 20px;
                 border: none;
                 background-color: #c0392b;
                 cursor: pointer;
                 font-weight: 500;
 
-                @include mobile{
+                @include mobile {
                     padding: 10px;
                 }
             }
         }
-       
     }
-
 }

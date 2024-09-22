@@ -1,44 +1,49 @@
-html{
+html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    overflow-y: scroll; // Ensure vertical scrolling is enabled
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
 
-body{
+body {
     background-color: #0c0c1d;
     color: lightgray;
+    overflow-x: hidden;
+    overflow-y: auto; // Allow vertical scrolling only
+    -webkit-font-smoothing: antialiased; // Improve font rendering
+    -moz-osx-font-smoothing: grayscale; // Improve font rendering
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-section{
+section {
     height: 100vh;
     scroll-snap-align: center;
 }
 
 @mixin mobile {
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (max-width:1366px) {
+    @media (max-width: 1366px) {
         @content;
     }
 }

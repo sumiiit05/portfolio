@@ -53,6 +53,10 @@
             @include mobile {
                 gap: 10px; // Adjust gap for mobile
             }
+            img {
+                width: 18px;
+                height: 18px;
+            }
 
             a {
                 img {
@@ -70,6 +74,16 @@
                     @include desktop {
                         width: 20px; // Adjust icon size for desktop
                     }
+                }
+
+                @include tablet {
+                    width: 18px; // Adjust icon size for tablet
+                    height: 18px; // Adjust icon size for tablet
+                }
+
+                @include desktop {
+                    width: 20px; // Adjust icon size for desktop
+                    height: 20px; // Adjust icon size for desktop
                 }
             }
 

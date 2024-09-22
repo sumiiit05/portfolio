@@ -17,12 +17,12 @@
         }
 
         @include tablet {
-            justify-content: space-between; // Adjust for tablet layout if needed
+            justify-content: space-between; // Adjust for tablet layout
             padding: 10px; // Modify padding for tablets
         }
 
         @include desktop {
-            justify-content: space-between; // Adjust for desktop layout if needed
+            justify-content: space-between; // Adjust for desktop layout
             padding: 15px; // Modify padding for desktops
         }
 
@@ -32,16 +32,27 @@
 
             @include mobile {
                 margin-left: 10px; // Adjust margin for mobile
+                font-size: 14px; // Adjust font size for mobile
             }
 
             @include tablet {
                 margin-left: 20px; // Adjust margin for tablet
+                font-size: 16px; // Adjust font size for tablet
+            }
+
+            @include desktop {
+                margin-left: 30px; // Adjust margin for desktop
+                font-size: 18px; // Adjust font size for desktop
             }
         }
 
         .social {
             display: flex;
             gap: 20px;
+
+            @include mobile {
+                gap: 10px; // Adjust gap for mobile
+            }
 
             img {
                 width: 18px;
@@ -51,10 +62,32 @@
                     width: 16px; // Adjust icon size for mobile
                     height: 16px; // Adjust icon size for mobile
                 }
+
+                @include tablet {
+                    width: 18px; // Adjust icon size for tablet
+                    height: 18px; // Adjust icon size for tablet
+                }
+
+                @include desktop {
+                    width: 20px; // Adjust icon size for desktop
+                    height: 20px; // Adjust icon size for desktop
+                }
             }
 
             .linkedin {
                 background-color: #85c1e9;
+
+                @include mobile {
+                    padding: 5px; // Adjust padding for mobile
+                }
+
+                @include tablet {
+                    padding: 7px; // Adjust padding for tablet
+                }
+
+                @include desktop {
+                    padding: 10px; // Adjust padding for desktop
+                }
             }
         }
     }

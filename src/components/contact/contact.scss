@@ -14,6 +14,10 @@
         flex-direction: column;
     }
 
+    @include tablet {
+        gap: 30px; // Adjust gap for tablet
+    }
+
     .textContainer {
         flex: 1;
         display: flex;
@@ -26,6 +30,10 @@
             align-items: center;
             margin-top: 70px;
         }
+
+        @include tablet {
+            gap: 30px; // Adjust gap for tablet
+        }
     }
 
     h1 {
@@ -35,10 +43,18 @@
         @include mobile {
             font-size: 36px;
         }
+
+        @include tablet {
+            font-size: 60px; // Adjust font size for tablet
+        }
     }
 
     span {
         font-weight: 300;
+
+        @include mobile {
+            font-size: 16px; // Adjust span font size for mobile
+        }
     }
 
     .formContainer {
@@ -48,6 +64,10 @@
         @include mobile {
             width: 100%;
             padding: 50px;
+        }
+
+        @include tablet {
+            padding: 40px; // Adjust padding for tablet
         }
 
         .phoneSvg {
@@ -72,6 +92,10 @@
                 @include mobile {
                     padding: 10px;
                 }
+
+                @include tablet {
+                    padding: 15px; // Adjust padding for tablet
+                }
             }
 
             button {
@@ -83,6 +107,10 @@
 
                 @include mobile {
                     padding: 10px;
+                }
+
+                @include tablet {
+                    padding: 15px; // Adjust padding for tablet
                 }
             }
         }

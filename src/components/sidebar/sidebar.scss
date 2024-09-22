@@ -33,10 +33,18 @@
             gap: 20px;
 
             a {
-                font-size: 40px;
+                font-size: 25px;
 
                 @include mobile {
                     font-size: 15px; // Adjust link font size for mobile
+                }
+
+                @include tablet {
+                    font-size: 20px; // Adjust link font size for tablet
+                }
+
+                @include desktop {
+                    font-size: 25px; // Adjust link font size for desktop
                 }
             }
         }
@@ -59,6 +67,23 @@
             height: 40px; // Adjust button size for mobile
             top: 15px; // Adjust button position for mobile
             left: 15px; // Adjust button position for mobile
+            font-size: 12px; // Smaller font size for mobile
+        }
+
+        @include tablet {
+            width: 45px; // Adjust button size for tablet
+            height: 45px; // Adjust button size for tablet
+            top: 20px; // Adjust button position for tablet
+            left: 20px; // Adjust button position for tablet
+            font-size: 14px; // Smaller font size for tablet
+        }
+
+        @include desktop {
+            width: 50px; // Maintain button size for desktop
+            height: 50px; // Maintain button size for desktop
+            top: 25px; // Maintain button position for desktop
+            left: 25px; // Maintain button position for desktop
+            font-size: 16px; // Font size for desktop
         }
     }
 }

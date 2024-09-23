@@ -11,8 +11,8 @@ const Parallax = ({ type }) => {
   });
 
   // Adjusted ranges to keep text and background within a reasonable movement
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
   return (
     <div

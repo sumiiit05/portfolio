@@ -24,10 +24,12 @@
 
         .progressBar {
             height: 5px;
-            background-color: #c0392b;
+            background-color: #5dade2;
+            
 
             @include mobile {
                 height: 3px; // Adjust height for mobile
+               
             }
 
             @include tablet {

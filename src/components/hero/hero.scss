@@ -44,6 +44,8 @@
             }
 
             .buttons {
+                cursor: pointer;
+                z-index: 999;
                 button {
                     padding: 20px;
                     border: 1px solid white;
@@ -53,6 +55,7 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+                    
 
                     @include mobile {
                         padding: 15px; // Adjust button padding for mobile

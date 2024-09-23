@@ -55,9 +55,9 @@ const Hero = () => {
 
             <motion.button
               variants={textVariants}
-              onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+              onClick={() => window.open("/Sumit Raut.pdf", "_blank")}
             >
-              Contact Me
+              Resume
             </motion.button>
           </motion.div>
         </motion.div>
@@ -71,7 +71,7 @@ const Hero = () => {
         Engineer Web Dev
       </motion.div>
       <div className="imageContainer">
-        <img src="cover.png" alt="photograph" />
+        <img src="sumit.png" alt="image of developer" />
       </div>
     </div>
   );

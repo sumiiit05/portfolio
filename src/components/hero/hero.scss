@@ -92,27 +92,41 @@
         position: absolute;
         top: 0;
         right: 0;
-
-        @include mobile {
-            height: 50%;
-            width: 100%;
-            top: unset;
-            bottom: 0;
-        }
-
+        margin-top: 125px;
+        margin-right: 150px;
+    
         img {
-            @include mobile {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            @include tablet {
-                width: auto; // Maintain aspect ratio on tablet
-                height: 100%; // Ensure full height on tablet
+            height: 60%;
+            width: auto;
+        }
+    }
+    
+    // Mobile query
+    @media (max-width: 738px) {
+        .imageContainer {
+            margin-top: 50px; // Adjust margin for smaller screens
+            margin-right: 20px; // Reduce margin for smaller screens
+            width: 100%; // Allow container to take full width
+            height: auto; // Let height adjust based on content
+    
+            img {
+                margin-top: 250px;
+                margin-left: 160px;
+                height: 20%; // Let image height adjust automatically
+                width: 50%; // Make image responsive to the container width
+                max-height: 60%; // Keep the image height within 60% of the container height
             }
         }
     }
+    
+    // Tablet query
+    @media (max-width: 1024px) {
+        .imageContainer {
+            margin-top: 80px; // Adjust margin for tablet devices
+            margin-right: 50px; // Moderate margin for tablet devices
+        }
+    }
+    
 
     .slidingTextContainer {
         position: absolute;
